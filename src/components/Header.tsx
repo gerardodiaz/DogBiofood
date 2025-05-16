@@ -31,7 +31,7 @@ export const Header = () => {
           <span className={`font-bold text-xl md:text-2xl transition-colors duration-300 ${
             isScrolled ? 'text-emerald-700' : 'text-white'
           }`}>
-            ¡BARF ME Up!
+            BARF ME Up!
           </span>
         </a>
         <nav>
