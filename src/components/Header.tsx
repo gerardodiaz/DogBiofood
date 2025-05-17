@@ -56,7 +56,7 @@ export const Header = () => {
                 className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded-full transition-all duration-300 flex items-center gap-2"
               >
                 <ShoppingCart className="h-4 w-4" />
-                Ordenar por Whatsapp
+                Ordenar x Whatsapp
               </a>
             </li>
           </ul>
