@@ -37,11 +37,7 @@ export const Header = () => {
         <nav className="flex items-center">
           <ul className="hidden md:flex space-x-8 items-center">
             {[
-              ['Nosotros', 'about'],
-              ['Productos', 'products'],
-              ['Ingredientes', 'ingredients'],
-              ['Nutrición', 'nutrition'],
-              ['Preguntas', 'faq']
+              ['Productos', 'products']
             ].map(([label, id]) => (
               <li key={id}>
                 <a 
@@ -60,7 +56,7 @@ export const Header = () => {
                 className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded-full transition-all duration-300 flex items-center gap-2"
               >
                 <ShoppingCart className="h-4 w-4" />
-                Ordenar
+                Ordenar por Whatsapp
               </a>
             </li>
           </ul>
