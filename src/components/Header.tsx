@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Dog } from 'lucide-react';
+import { Dog, ShoppingCart } from 'lucide-react';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,8 +34,8 @@ export const Header = () => {
             BARF ME Up!
           </span>
         </a>
-        <nav>
-          <ul className="hidden md:flex space-x-8">
+        <nav className="flex items-center">
+          <ul className="hidden md:flex space-x-8 items-center">
             {[
               ['Nosotros', 'about'],
               ['Productos', 'products'],
@@ -54,6 +54,15 @@ export const Header = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <a 
+                href="#products" 
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded-full transition-all duration-300 flex items-center gap-2"
+              >
+                <ShoppingCart className="h-4 w-4" />
+                Ordenar
+              </a>
+            </li>
           </ul>
           <button className={`md:hidden ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
